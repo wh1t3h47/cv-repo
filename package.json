@@ -1,8 +1,9 @@
 {
-  "name": "typescript-react-tailwind-vite",
+  "name": "cv-repo",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "homepage": "https://wh1t3h47.github.io/cv-builder/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
