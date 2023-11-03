@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://wh1t3h47.github.io/cv-repo/",
+  "homepage": "https://wh1t3h47.github.io/cv-repo",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,8 +14,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0",
-    "yarn-upgrade-all": "^0.7.2"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.34",
