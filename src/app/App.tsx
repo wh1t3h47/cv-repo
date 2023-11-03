@@ -32,166 +32,261 @@ import {
 
 const Curriculum: React.FC = () => {
   return (
-    <div className="bg-white text-gray-800 p-8 grid grid-cols-12 gap-8 rounded-lg shadow-lg">
-      <div className="col-span-1 flex flex-col items-center">
-        <div className="bg-blue-500 h-16 w-8 mb-4"></div>
-        <div className="h-20 w-4 border-t-4 border-b-4 border-blue-500 mb-4"></div>
-        <div className="bg-blue-500 h-16 w-8"></div>
-      </div>
-      <div className="flex items-center mb-8">
-        <div className="h-16 w-16 bg-blue-500 rounded-lg flex items-center justify-center mr-6">
-          {/* Seu ícone pessoal */}
+    <>
+      <header className="flex mt-7">
+        <div className="ml-10 flex flex-col items-center">
+          <div className="bg-blue-400 h-10 w-40 sm:w-64 mb-4"></div>
+          <div className="h-3.5 w-32 sm:w-48 border-t-4 border-b-4 border-blue-500 mb-4"></div>
+          <div className="bg-blue-400 h-10 w-40 sm:w-64 mb-4"></div>
+          <div className="h-3.5 w-32 sm:w-48 border-t-4 border-b-4 border-blue-500 mb-4"></div>
+          <div className="bg-blue-400 h-10 w-40 sm:w-64"></div>
         </div>
-        <div>
-          <h1 className="text-4xl font-bold">Antônio Martos Harres</h1>
-          <p className="text-xl">tom.mharres@gmail.com</p>
+        <div className="flex items-center mb-8">
+          <div className="ml-10">
+            <h1 className="text-4xl font-bold whitespace-nowrap divide-y mt-1.5">
+              Antônio <br /> Martos <br /> Harres
+            </h1>
+            <div className="mt-3 bg-zinc-300 h-1 w-64 mb-4"></div>
+            <p className="text-xl text-stone-700 sm:block hidden">
+              tom.mharres@gmail.com
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="col-span-11 grid grid-cols-3 gap-8">
-        <aside className="col-span-1">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Certificações</h2>
-            <ul className="list-disc pl-8">
-              <li>FCE - Nível B2 em Inglês</li>
-              <li>
-                <SiSololearn className="ml-1 mr-3" /> SoloLearn (EUA)
-                Certificados em <br />
-                <ul className="list-disc pl-8">
-                  <li>
-                    <span className="text-blue-500">
-                      <SiSololearn className="ml-1 mr-3" /> Frontend:
-                    </span>{" "}
-                    React + Redux, HTML, CSS e Web Design Responsivo;
-                    <br />
+      </header>
+      <div className="bg-white text-gray-800 p-8">
+        <div className="grid grid-cols-12 gap-8">
+          <aside className="mr-2 col-span-12 sm:col-span-5 md:col-span-6 xl:col-span-4 mb-8 sm:order-first order-last">
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">Certificações</h2>
+              <ul className="list-disc pl-8">
+                <li>FCE - Nível B2 em Inglês</li>
+                <li>
+                  <span className="flex-row flex">
+                    SoloLearn (EUA) Certificados em
+                  </span>
+                  <ul className="list-none pl-1">
+                    <li className="pt-2">
+                      <span className="text-blue-500 flex-row flex items-center">
+                        <SiSololearn className="ml-1 mr-3" /> Frontend:
+                      </span>
+                      <div className="pl-6">
+                        React + Redux, HTML, CSS
+                        <br />e Web Design Responsivo;
+                      </div>
+                    </li>
+                    <li className="pt-1">
+                      <span className="text-blue-500 flex-row flex items-center">
+                        <SiSololearn className="ml-1 mr-3" /> Backend:
+                      </span>
+                      <div className="pl-6">JavaScript, SQL e Python;</div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Habilidades</h2>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+                <ul className="list-none pl-8">
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiReact className="text-blue-500" />
+                    </span>
+                    React,
+                    <span className="mx-2">
+                      <SiNextdotjs className="text-blue-500" />
+                    </span>
+                    Next.js;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiHtml5 className="text-blue-500" />
+                    </span>
+                    HTML5,
+                    <span className="mx-2">
+                      <SiCss3 className="text-blue-500" />
+                    </span>
+                    CSS3;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiTailwindcss className="text-blue-500" />
+                    </span>
+                    Tailwind ,
+                    <span className="mx-2">
+                      <SiBootstrap className="text-blue-500" />
+                    </span>
+                    Bootstrap,
+                    <span className="mx-2">
+                      <SiMui className="text-blue-500" />
+                    </span>
+                    MUI;
                   </li>
                 </ul>
+              </div>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-2">Backend</h3>
                 <ul className="list-disc pl-8">
-                  <li>
-                    <span className="text-blue-500">
-                      <SiSololearn className="ml-1 mr-3" /> Backend:
-                    </span>{" "}
-                    JavaScript, SQL e Python;
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiTypescript className="text-blue-500" />
+                    </span>
+                    TypeScript,
+                    <span className="mx-2">
+                      <SiJavascript className="text-blue-500" />
+                    </span>
+                    JavaScript;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiNodedotjs className="text-blue-500" />
+                    </span>
+                    Node.js,
+                    <span className="mx-2">
+                      <SiNestjs className="text-blue-500" />
+                    </span>
+                    NestJS,
+                    <span className="mx-2">
+                      <SiExpress className="text-blue-500" />
+                    </span>
+                    ExpressJS;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiMysql className="text-blue-500" />
+                    </span>
+                    MySQL,
+                    <span className="mx-2">
+                      <SiMicrosoftsqlserver className="text-blue-500" />
+                    </span>
+                    MSSQL,
+                    <span className="mx-2">
+                      <SiPostgresql className="text-blue-500" />
+                    </span>
+                    PostgreSQL;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiRedis className="text-blue-500" />
+                    </span>
+                    Redis,
+                    <span className="mx-2">
+                      <SiMongodb className="text-blue-500" />
+                    </span>
+                    MongoDB,
+                    <span className="mx-2">
+                      <SiFirebase className="text-blue-500" />
+                    </span>
+                    Firebase;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiPython className="text-blue-500" />
+                    </span>
+                    Python,
+                    <span className="mx-2">
+                      <SiDjango className="text-blue-500" />
+                    </span>
+                    Django;
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Habilidades</h2>
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">Frontend</h3>
-              <ul className="list-disc pl-8">
-                <li>
-                  <SiReact className="text-blue-500 mr-3" />
-                  React, <SiNextdotjs className="text-blue-500 mr-3" /> Next.js;
-                </li>
-                <li>
-                  <SiHtml5 className="text-blue-500 mr-3" /> HTML5,{" "}
-                  <SiCss3 className="text-blue-500 mr-3" /> CSS3;
-                </li>
-                <li>
-                  <SiTailwindcss className="text-blue-500 mr-3" /> Tailwind CSS,{" "}
-                  <SiBootstrap className="text-blue-500 mr-3" /> Bootstrap,{" "}
-                  <SiMui className="text-blue-500 mr-3" /> Material-UI;
-                </li>
-              </ul>
-            </div>
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">Backend</h3>
-              <ul className="list-disc pl-8">
-                <li>
-                  <SiTypescript className="text-blue-500 mr-3" /> TypeScript,{" "}
-                  <SiJavascript className="text-blue-500 mr-3" /> JavaScript;
-                </li>
-                <li>
-                  <SiNodedotjs className="text-blue-500 mr-3" /> Node.js,{" "}
-                  <SiNestjs className="text-blue-500 mr-3" /> NestJS,{" "}
-                  <SiExpress className="text-blue-500 mr-3" /> ExpressJS;
-                </li>
-                <li>
-                  <SiMysql className="text-blue-500 mr-3" /> MySQL,{" "}
-                  <SiMicrosoftsqlserver className="text-blue-500 mr-3" /> MSSQL,{" "}
-                  <SiPostgresql className="text-blue-500 mr-3" /> PostgreSQL;
-                </li>
-                <li>
-                  <SiRedis className="text-blue-500 mr-3" /> Redis,{" "}
-                  <SiMongodb className="text-blue-500 mr-3" /> MongoDB,{" "}
-                  <SiFirebase className="text-blue-500 mr-3" /> Firebase;
-                </li>
-                <li>
-                  <SiPython className="text-blue-500 mr-3" /> Python,{" "}
-                  <SiDjango className="text-blue-500 mr-3" /> Django;
-                </li>
-              </ul>
-            </div>
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">Infraestrutura</h3>
-              <ul className="list-disc pl-8">
-                <li>
-                  <SiAmazonaws className="text-blue-500 mr-3" />
-                  AWS, <SiDocker className="text-blue-500 mr-3" /> Docker,{" "}
-                  <SiNginx className="text-blue-500 mr-3" /> Nginx,{" "}
-                  <SiApache className="text-blue-500 mr-3" /> Apache;
-                </li>
-                <li>
-                  <SiLinux className="text-blue-500 mr-3" /> Linux,{" "}
-                  <SiShell className="text-blue-500 mr-3" /> Bash;
-                </li>
-              </ul>
-            </div>
-          </div>
-        </aside>
-        <section className="col-span-2">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Educação</h2>
-            <div className="mb-4 flex items-center">
-              <FaGraduationCap className="text-blue-500 ml-1 mr-2" />
-              <span>
-                Estudo Autodidata de Eletrônica desde os 7 anos de idade
-              </span>
-            </div>
-            <div className="flex items-center">
-              <FaBook className="text-blue-500 ml-1 mr-3" />
-              <span>Cultura Inglesa - 6 anos de estudo</span>
-            </div>
-          </div>
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">
-              Experiência Profissional
-            </h2>
-            <div className="mb-4 flex items-center">
-              <FaBriefcase className="text-blue-500 ml-1 mr-2" />
-              <div>
-                <h3 className="text-xl font-semibold">ZenBit Tech</h3>
-                <p>Full-stack Developer</p>
-                <p>Jun 2022 - Out 2022 (5 meses)</p>
-                <p>Trabalho remoto (Polônia/Ucrânia)</p>
+              </div>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-2">Infraestrutura</h3>
+                <ul className="list-disc pl-8">
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiAmazonaws className="text-blue-500" />
+                    </span>
+                    AWS,{" "}
+                    <span className="mx-2">
+                      <SiDocker className="text-blue-500" />
+                    </span>
+                    Docker,
+                    <span className="mx-2">
+                      <SiNginx className="text-blue-500" />
+                    </span>
+                    Nginx,
+                    <span className="mx-2">
+                      <SiApache className="text-blue-500" />
+                    </span>
+                    Apache;
+                  </li>
+                  <li className="flex items-baseline">
+                    <span className="mx-2">
+                      <SiLinux className="text-blue-500" />
+                    </span>
+                    Linux,
+                    <span className="mx-2">
+                      <SiShell className="text-blue-500" />
+                    </span>
+                    Bash;
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="mb-4 flex items-center">
-              <FaBriefcase className="text-blue-500 ml-1 mr-2" />
-              <div>
-                <h3 className="text-xl font-semibold">
-                  RedFox Digital | IT Company
-                </h3>
-                <p>Desenvolvedor Full-Stack Pleno II</p>
-                <p>Jul 2021 - Mai 2022 (11 meses)</p>
-                <p>Trabalho remoto (São Paulo)</p>
+          </aside>
+          <section className="ml-1 col-span-12 sm:ml-16 sm:col-span-7 md:col-span-6 lg:col-span-4 2xl:col-span-3 mt-2">
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">Educação</h2>
+              <div className="mb-4 flex items-center">
+                <span className="ml-1 mr-2">
+                  <FaGraduationCap className="text-blue-500 " />
+                </span>
+                <span>
+                  SENAI - PR - Técnico em Desenvolvimentos de Sistemas
+                </span>
+              </div>
+              <div className="flex items-center">
+                <span className="ml-1 mr-3">
+                  <FaBook className="text-blue-500" />
+                </span>
+                <span>Cultura Inglesa - 6 anos de estudo (Fluente)</span>
               </div>
             </div>
-            <div className="flex items-center">
-              <FaBriefcase className="text-blue-500 ml-1 mr-2" />
-              <div>
-                <h3 className="text-xl font-semibold">YouSendr</h3>
-                <p>Desenvolvedor Júnior</p>
-                <p>Mai 2020 - Abr 2021 (1 ano)</p>
-                <p>Curitiba, Paraná, Brasil</p>
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">
+                Experiência Profissional
+              </h2>
+              <div className="mb-4 flex items-center">
+                <span className="ml-1 mr-2">
+                  <FaBriefcase className="text-blue-500" />
+                </span>
+                <div>
+                  <h3 className="text-xl font-semibold">ZenBit Tech</h3>
+                  <p>Full-stack Developer</p>
+                  <p>Jun 2022 - Out 2022 (5 meses)</p>
+                  <p>Trabalho remoto (Polônia/ Ucrânia)</p>
+                </div>
+              </div>
+              <div className="mb-4 flex items-center">
+                <span className="ml-1 mr-2">
+                  <FaBriefcase className="text-blue-500" />
+                </span>
+                <div>
+                  <h3 className="text-xl font-semibold">RedFox Tech</h3>
+                  <p>Desenvolvedor Full-Stack Pleno II</p>
+                  <p>Jul 2021 - Mai 2022 (11 meses)</p>
+                  <p>Trabalho remoto (São Paulo)</p>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <span className="ml-1 mr-2">
+                  <FaBriefcase className="text-blue-500" />
+                </span>
+                <div>
+                  <h3 className="text-xl font-semibold">YouSendr</h3>
+                  <p>Desenvolvedor Júnior</p>
+                  <p>Mai 2020 - Abr 2021 (1 ano)</p>
+                  <p>Curitiba, Paraná, Brasil</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
