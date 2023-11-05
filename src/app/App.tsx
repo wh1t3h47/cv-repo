@@ -1,5 +1,13 @@
 import React from "react";
-import { FaGraduationCap, FaBriefcase, FaBook } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaBriefcase,
+  FaBook,
+  FaWhatsapp,
+  FaEnvelope,
+  FaGithub,
+  FaGlobe,
+} from "react-icons/fa";
 import {
   SiHtml5,
   SiCss3,
@@ -29,53 +37,76 @@ import {
   SiFirebase,
   SiSololearn,
 } from "react-icons/si";
+import "reset.css";
 
 const Curriculum: React.FC = () => {
   return (
     <>
-      <header className="flex mt-7">
-        <div className="ml-10 flex flex-col items-center">
-          <div className="bg-blue-400 h-10 w-40 sm:w-64 mb-4"></div>
-          <div className="h-3.5 w-32 sm:w-48 border-t-4 border-b-4 border-blue-500 mb-4"></div>
-          <div className="bg-blue-400 h-10 w-40 sm:w-64 mb-4"></div>
-          <div className="h-3.5 w-32 sm:w-48 border-t-4 border-b-4 border-blue-500 mb-4"></div>
-          <div className="bg-blue-400 h-10 w-40 sm:w-64"></div>
-        </div>
-        <div className="flex items-center mb-8">
-          <div className="ml-10">
-            <h1 className="text-4xl font-bold whitespace-nowrap divide-y mt-1.5">
-              Antônio <br /> Martos <br /> Harres
-            </h1>
-            <div className="mt-3 bg-zinc-300 h-1 w-64 mb-4"></div>
-            <p className="text-xl text-stone-700 sm:block hidden">
-              tom.mharres@gmail.com
+      <header className="pt-7 pb-2 bg-purple-100 print:bg-purple-50">
+        <div className="md:flex print:flex items-center mb-8">
+          <div className="mx-10 bg-cyan-700">
+            <div className="mx-10 pb-3">
+              <h1 className="text-3xl print:text-2xl text-yellow-200 font-bold whitespace-nowrap divide-y mt-1.5">
+                Antônio Martos Harres
+              </h1>
+              <div className="mt-3 bg-pink-300 print:bg-pink-200 h-1 w-64 mb-4"></div>
+              <p className="text-xl print:text-lg text-yellow-100">
+                <FaEnvelope className="inline-block mr-2" />
+                tom.mharres@gmail.com
+              </p>
+              <p className="text-xl print:text-lg text-yellow-100">
+                <FaWhatsapp className="inline-block mr-2" />
+                +55 41 98876-5037
+              </p>
+              <p className="text-xl print:text-lg text-yellow-100">
+                <FaGithub className="inline-block mr-2" />
+                https://github.com/wh1t3h47
+              </p>
+              <p className="text-xl print:text-lg text-yellow-100 mt-1">
+                <FaGlobe className="inline-block mr-2 mb-1" />
+                Curitiba - PR - Brasil
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col mx-5 print:-ms-5 px-10 md:px-0 self-baseline">
+            <p className="text-gray-900 text-2xl print:text-xl font-semibold sm:mt-5 self-center lg:self-baseline">
+              Desenvolvedor Full-Stack JavaScript Especialista em React e Next
+            </p>
+            <p className="text-gray-900 text-lg print:text-md t-3 self-center lg:self-baseline md:pt-1 lg:pt-5">
+              Apaixonado pelo aprendizado e resolvendo problemas desde criança,
+              possuo experiência sólida em desenvolvimento frontend e SEO.
             </p>
           </div>
         </div>
       </header>
+
       <div className="bg-white text-gray-800 p-8">
         <div className="grid grid-cols-12 gap-8">
-          <aside className="mr-2 col-span-12 sm:col-span-5 md:col-span-6 xl:col-span-4 mb-8 sm:order-first order-last">
+          <aside className="mr-2 col-span-12 sm:col-span-6 md:col-span-5 xl:col-span-4 mb-8 sm:order-first order-last">
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Certificações</h2>
+
               <ul className="list-disc pl-8">
-                <li>FCE - Nível B2 em Inglês</li>
-                <li>
-                  <span className="flex-row flex">
+                <li className="mb-4">
+                  <span className="font-semibold">
+                    FCE - Nível B2 em Inglês
+                  </span>
+                </li>
+                <li className="mb-4">
+                  <span className="flex-row flex font-semibold">
                     SoloLearn (EUA) Certificados em
                   </span>
-                  <ul className="list-none pl-1">
-                    <li className="pt-2">
-                      <span className="text-blue-500 flex-row flex items-center">
+                  <ul className="list-none pl-8">
+                    <li className="mb-2">
+                      <span className="text-blue-600 flex-row flex items-center font-semibold">
                         <SiSololearn className="ml-1 mr-3" /> Frontend:
                       </span>
                       <div className="pl-6">
-                        React + Redux, HTML, CSS
-                        <br />e Web Design Responsivo;
+                        React + Redux, HTML, CSS e Web Design Responsivo;
                       </div>
                     </li>
-                    <li className="pt-1">
-                      <span className="text-blue-500 flex-row flex items-center">
+                    <li>
+                      <span className="text-blue-600 flex-row flex items-center font-semibold">
                         <SiSololearn className="ml-1 mr-3" /> Backend:
                       </span>
                       <div className="pl-6">JavaScript, SQL e Python;</div>
@@ -84,6 +115,7 @@ const Curriculum: React.FC = () => {
                 </li>
               </ul>
             </div>
+
             <div>
               <h2 className="text-2xl font-bold mb-4">Habilidades</h2>
               <div className="mb-6">
@@ -113,7 +145,7 @@ const Curriculum: React.FC = () => {
                     <span className="mx-2">
                       <SiTailwindcss className="text-blue-500" />
                     </span>
-                    Tailwind ,
+                    Tailwind,
                     <span className="mx-2">
                       <SiBootstrap className="text-blue-500" />
                     </span>
@@ -208,7 +240,7 @@ const Curriculum: React.FC = () => {
                       <SiNginx className="text-blue-500" />
                     </span>
                     Nginx,
-                    <span className="mx-2">
+                    <span className="ml-2 mr-1">
                       <SiApache className="text-blue-500" />
                     </span>
                     Apache;
@@ -230,56 +262,96 @@ const Curriculum: React.FC = () => {
           <section className="ml-1 col-span-12 sm:ml-16 sm:col-span-7 md:col-span-6 lg:col-span-4 2xl:col-span-3 mt-2">
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Educação</h2>
-              <div className="mb-4 flex items-center">
-                <span className="ml-1 mr-2">
-                  <FaGraduationCap className="text-blue-500 " />
-                </span>
-                <span>
-                  SENAI - PR - Técnico em Desenvolvimentos de Sistemas
-                </span>
+
+              <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-2">
+                    <FaGraduationCap className="text-blue-500" />
+                  </span>
+                  <span className="font-semibold text-lg">SENAI - PR</span>
+                </div>
+                <p className="text-md">
+                  Técnico em Desenvolvimento de Sistemas
+                </p>
+                <p className="text-md">2023 - Atualmente</p>
               </div>
-              <div className="flex items-center">
-                <span className="ml-1 mr-3">
-                  <FaBook className="text-blue-500" />
-                </span>
-                <span>Cultura Inglesa - 6 anos de estudo (Fluente)</span>
+
+              <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-3">
+                    <FaBook className="text-blue-500" />
+                  </span>
+                  <span className="font-semibold text-lg">
+                    Le Centre Social et Culturel de l'Arbrisseau
+                  </span>
+                </div>
+                <p className="text-md">Intercâmbio em Lille, França</p>
+                <p className="text-md">Francês Básico/ A1</p>
+                <p className="text-md">2017</p>
+              </div>
+
+              <div>
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-3">
+                    <FaBook className="text-blue-500" />
+                  </span>
+                  <span className="font-semibold text-lg">
+                    Cultura Inglesa - Consulado Britânico
+                  </span>
+                </div>
+                <p className="text-md">Inglês Fluente/ C1</p>
+                <p className="text-md">2012-2017</p>
               </div>
             </div>
+
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">
                 Experiência Profissional
               </h2>
-              <div className="mb-4 flex items-center">
-                <span className="ml-1 mr-2">
-                  <FaBriefcase className="text-blue-500" />
-                </span>
-                <div>
-                  <h3 className="text-xl font-semibold">ZenBit Tech</h3>
-                  <p>Full-stack Developer</p>
-                  <p>Jun 2022 - Out 2022 (5 meses)</p>
-                  <p>Trabalho remoto (Polônia/ Ucrânia)</p>
+
+              <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-2">
+                    <FaBriefcase className="text-blue-500" />
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold">ZenBit Tech</h3>
+                    <p className="font-medium">Full-stack Developer</p>
+                    <p className="text-md">Jun 2022 - Out 2022 (5 meses)</p>
+                    <p className="text-md">
+                      Trabalho remoto (Polônia/ Ucrânia)
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="mb-4 flex items-center">
-                <span className="ml-1 mr-2">
-                  <FaBriefcase className="text-blue-500" />
-                </span>
-                <div>
-                  <h3 className="text-xl font-semibold">RedFox Tech</h3>
-                  <p>Desenvolvedor Full-Stack Pleno II</p>
-                  <p>Jul 2021 - Mai 2022 (11 meses)</p>
-                  <p>Trabalho remoto (São Paulo)</p>
+
+              <div className="mb-4">
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-2">
+                    <FaBriefcase className="text-blue-500" />
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold">RedFox Tech</h3>
+                    <p className="font-medium">
+                      Desenvolvedor Full-Stack Pleno II
+                    </p>
+                    <p className="text-md">Jul 2021 - Mai 2022 (11 meses)</p>
+                    <p className="text-md">Trabalho remoto (São Paulo)</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <span className="ml-1 mr-2">
-                  <FaBriefcase className="text-blue-500" />
-                </span>
-                <div>
-                  <h3 className="text-xl font-semibold">YouSendr</h3>
-                  <p>Desenvolvedor Júnior</p>
-                  <p>Mai 2020 - Abr 2021 (1 ano)</p>
-                  <p>Curitiba, Paraná, Brasil</p>
+
+              <div>
+                <div className="flex items-center mb-2">
+                  <span className="ml-1 mr-2">
+                    <FaBriefcase className="text-blue-500" />
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold">YouSendr</h3>
+                    <p className="font-medium">Desenvolvedor Júnior</p>
+                    <p className="text-md">Mai 2020 - Abr 2021 (1 ano)</p>
+                    <p className="text-md">Curitiba, Paraná, Brasil</p>
+                  </div>
                 </div>
               </div>
             </div>
