@@ -13,5 +13,5 @@ export default defineConfig({
       "@entities": path.resolve("src/entities"),
     },
   },
-  base: "/cv-repo/"
+  base: "/cv-repo/",
 });
