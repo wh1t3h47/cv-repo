@@ -266,21 +266,25 @@ const Curriculum: React.FC = () => {
                 <li className="ml-14 flex flex-row mb-3">
                   <span className="list-disc self-center mr-3">•</span>
                   <p>
-                    Francês Básico/ A1
+                    Inglês Fluente / C1
                     <br />
-                    Intercâmbio Cultural - França (Lille)
+                    Certificação FCE - British Council
                     <br />
-                    Jan - Mar 2017
+                    Cultura Inglesa
+                    <br />
+                    mar 2012 - dez 2017
                   </p>
                 </li>
                 <li className="ml-14 flex flex-row">
                   <span className="list-disc self-center mr-3">•</span>
                   <p>
-                    Inglês Fluente / C1
+                    Francês Básico/ A1
                     <br />
-                    Certificação FCE - British Council
+                    Intercâmbio Cultural - França (Lille)
                     <br />
-                    mar 2012 - dez 2017
+                    Le Centre Social et Culturel de l'Arbrisseau
+                    <br />
+                    Jan - Mar 2017
                   </p>
                 </li>
               </ul>
