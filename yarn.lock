@@ -1586,6 +1586,11 @@ tailwindcss@^3.3.5:
     resolve "^1.22.2"
     sucrase "^3.32.0"
 
+talkr@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/talkr/-/talkr-3.4.0.tgz#41a4009e50837a3c6ffca1819a66db2a2ed6c327"
+  integrity sha512-SuaqeeneudLbeNPIDfGYitfQRY4igkNCZWbSBzj2z1X74PqFnp5LQ9T0+CfYbY0Lf8jpAsBAOXbDwTAOMX9qoA==
+
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
