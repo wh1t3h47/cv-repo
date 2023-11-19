@@ -14,6 +14,11 @@ export default {
       },
       screens: {
         print: { raw: "print" },
+        md: [
+          { min: "900px" },
+          { raw: "print" }, // Always hit md in print mode
+        ],
+        lg: "1096px",
       },
     },
   },
