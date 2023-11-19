@@ -16,7 +16,7 @@ export default {
         print: { raw: "print" },
         xs: "425px",
         md: [
-          { min: "900px" },
+          { min: "925px" },
           { raw: "print" }, // Always hit md in print mode
         ],
         lg: "1096px",

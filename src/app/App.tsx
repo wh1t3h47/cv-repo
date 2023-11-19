@@ -101,177 +101,173 @@ const Curriculum: React.FC = () => {
       <div className="bg-white text-gray-800 md:px-8">
         <div className="grid grid-cols-12 md:gap-8 justify-items-center md:justify-items-start">
           <aside
-            className={`px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-14 md:mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full max-w-[40rem] md:w-auto h-full ${a4PrintPageClass}`}
+            className={`px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-14 md:mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full md:max-w-[28rem] md:min-w-[24rem] h-full ${a4PrintPageClass}`}
           >
             <div className="mb-8">
               <h2 className="text-2xl font-bold my-3.5">
                 {i18n("certs_title")}
               </h2>
 
-              <div className="mb-4 pl-4">
+              <div className="mb-4 pl-10 md:pl-4">
                 <span className="flex-row flex font-semibold">
                   {i18n("sololearn")}
                 </span>
 
-                <div className="pl-9">
+                <div className="pl-6">
                   <div className="my-3">
                     <span className="text-indigo-400 flex-row flex items-center font-semibold">
                       <SiSololearn className="ml-1 mr-2" />
                       {neutral("front_column")}
                     </span>
-                    <div className="pl-6">{i18n("sololearn_front")}</div>
+                    <p className="pl-6">{i18n("sololearn_front")}</p>
                   </div>
 
                   <span className="text-indigo-400 flex-row flex items-center font-semibold">
                     <SiSololearn className="ml-1 mr-2" />
                     {neutral("back_column")}
                   </span>
-                  {i18n("sololearn_back")}
+                  <p className="pl-6">{i18n("sololearn_back")}</p>
                 </div>
               </div>
             </div>
 
             <h2 className="text-2xl font-bold mb-4">{i18n("skills_title")}</h2>
-            <div className="mb-6 ml-4">
+            <div className="mb-6 ml-10 md:ml-4 md:mr-7">
               <h3 className="text-xl font-semibold mb-2">{neutral("front")}</h3>
-              <ul className="list-none pl-8">
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiReact className="text-indigo-400" />
-                  </span>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mb-2">
+                <div className="flex items-center">
+                  <SiReact className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("react")}
-                  <span className="mx-2">
-                    <SiNextdotjs className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiNextdotjs className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("next")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiHtml5 className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 my-2">
+                <div className="flex items-center">
+                  <SiHtml5 className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("html")}
-                  <span className="mx-2">
-                    <SiCss3 className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiCss3 className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("css")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiTailwindcss className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mt-2">
+                <div className="flex items-center">
+                  <SiTailwindcss className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("tailwind")}
-                  <span className="mx-2">
-                    <SiBootstrap className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiBootstrap className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("bootstrap")}
-                  <span className="mx-2">
-                    <SiMui className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiMui className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("mui")}
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div className="mb-6 xs:ml-4">
+
+            <div className="mb-6 ml-10 md:ml-4 md:mr-7">
               <h3 className="text-xl font-semibold mb-2">{neutral("back")}</h3>
-              <ul className="xs:pl-8">
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiTypescript className="text-indigo-400" />
-                  </span>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mb-2">
+                <div className="flex items-center">
+                  <SiTypescript className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("ts")}
-                  <span className="mx-2">
-                    <SiJavascript className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiJavascript className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("js")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiNodedotjs className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 my-2">
+                <div className="flex items-center">
+                  <SiNodedotjs className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("node")}
-                  <span className="mx-2">
-                    <SiNestjs className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiNestjs className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("nest")}
-                  <span className="mx-2">
-                    <SiExpress className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiExpress className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("express")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiMysql className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 my-2">
+                <div className="flex items-center">
+                  <SiMysql className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("mysql")}
-                  <span className="mx-2">
-                    <SiMicrosoftsqlserver className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiMicrosoftsqlserver className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("mssql")}
-                  <span className="mx-2">
-                    <SiPostgresql className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiPostgresql className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("postgresql")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiRedis className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 my-2">
+                <div className="flex items-center">
+                  <SiRedis className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("redis")}
-                  <span className="mx-2">
-                    <SiMongodb className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiMongodb className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("mongo")}
-                  <span className="mx-2">
-                    <SiFirebase className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiFirebase className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("firebase")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiPython className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mt-2">
+                <div className="flex items-center">
+                  <SiPython className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("python")}
-                  <span className="mx-2">
-                    <SiDjango className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiDjango className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("django")}
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div className="mb-6 xs:ml-4">
+
+            <div className="mb-6 ml-10 md:ml-4 md:mr-7">
               <h3 className="text-xl font-semibold mb-2">
                 {i18n("infra_title")}
               </h3>
-              <ul className="xs:pl-8">
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiAmazonaws className="text-indigo-400" />
-                  </span>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mb-2">
+                <div className="flex items-center">
+                  <SiAmazonaws className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("aws")}
-                  <span className="mx-2">
-                    <SiDocker className="text-indigo-400" />
-                  </span>
-                  {neutral("docker")}
-                  <span className="mx-2">
-                    <SiNginx className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiNginx className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("nginx")}
-                  <span className="ml-2 mr-1">
-                    <SiApache className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiApache className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("apache")}
-                </li>
-                <li className="flex items-baseline">
-                  <span className="mx-2">
-                    <SiLinux className="text-indigo-400" />
-                  </span>
+                </div>
+              </div>
+              <div className="ml-7 grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-3 gap-x-4 md:gap-x-8 mt-2">
+                <div className="flex items-center">
+                  <SiDocker className="text-indigo-400 mr-2 flex-shrink-0" />
+                  {neutral("docker")}
+                </div>
+                <div className="flex items-center">
+                  <SiLinux className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("linux")}
-                  <span className="mx-2">
-                    <SiShell className="text-indigo-400" />
-                  </span>
+                </div>
+                <div className="flex items-center">
+                  <SiShell className="text-indigo-400 mr-2 flex-shrink-0" />
                   {neutral("bash")}
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div className="mb-6">
@@ -282,7 +278,7 @@ const Curriculum: React.FC = () => {
                 </h3>
               </span>
               <ul>
-                <li className="ml-14 flex flex-row mb-3">
+                <li className="ml-10 md:ml-11 flex flex-row mb-3">
                   <span className="list-disc self-center mr-3">•</span>
                   <p>
                     {i18n("en")}
@@ -294,7 +290,7 @@ const Curriculum: React.FC = () => {
                     {i18n("en_date")}
                   </p>
                 </li>
-                <li className="ml-14 flex flex-row">
+                <li className="ml-10 md:ml-11 flex flex-row">
                   <span className="list-disc self-center mr-3">•</span>
                   <p>
                     {i18n("fr")}
@@ -310,7 +306,7 @@ const Curriculum: React.FC = () => {
             </div>
           </aside>
           <section
-            className={`col-span-12 ml-5 md:ml-16 mb-14 md:mb-0 md:col-span-7 md:col-span-6 lg:col-span-4s 2xl:col-span-3 mt-2 text-neutral-750 ${a4PrintPageClass}`}
+            className={`col-span-12 pl-5 mb-14 md:mb-7 md:ml-5 md:col-span-7 lg:col-span-4 2xl:col-span-3 mt-2 text-neutral-750 w-full ${a4PrintPageClass}`}
           >
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">{i18n("exp_title")}</h2>
@@ -322,7 +318,7 @@ const Curriculum: React.FC = () => {
                       <FaBriefcase className="text-indigo-400" />
                     </span>
                     <div className="my-2 w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl">
-                      <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
+                      <span className="flex justify-between items-center md:w-[26rem] lg:w-[28rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                         <h3 className="text-xl font-semibold">
                           {neutral("zenbit")}
                         </h3>
@@ -354,7 +350,7 @@ const Curriculum: React.FC = () => {
                     </span>
 
                     <div className="w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl ">
-                      <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
+                      <span className="flex justify-between items-center md:w-[26rem] lg:w-[28rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                         <h3 className="text-xl font-semibold">
                           {neutral("redfox")}
                         </h3>
@@ -381,7 +377,7 @@ const Curriculum: React.FC = () => {
                   </span>
 
                   <div className="w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl ">
-                    <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
+                    <span className="flex justify-between items-center md:w-[26rem] lg:w-[28rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                       <h3 className="text-xl font-semibold">YouSendr</h3>
                       <p className="text-md">{i18n("yousendr_date")}</p>
                     </span>
@@ -403,8 +399,10 @@ const Curriculum: React.FC = () => {
             </div>
 
             <div className="xs:ml-2 pl-1 pr-1.5 xs:pr-0">
-              <h2 className="text-2xl font-bold mb-5">{i18n("edu_title")}</h2>
-              <div className="mb-4 ml-7 md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] w-10/12">
+              <h2 className="text-2xl font-bold mb-5 md:-ml-3">
+                {i18n("edu_title")}
+              </h2>
+              <div className="mb-4 ml-7 md:w-[26rem] lg:w-[28rem] xl:w-[40rem] 2xl:w-[46rem] w-10/12">
                 <div className="flex items-center mb-1 pb-1 border-b-2 border-purple-200 border-solid md:w-full">
                   <span className="mr-2">
                     <FaGraduationCap className="text-indigo-400" />
@@ -426,39 +424,41 @@ const Curriculum: React.FC = () => {
             <h2 className="text-2xl font-bold mt-7 mb-5">
               {i18n("projects_title")}
             </h2>
-            <ul className="list-disc space-y-2 ml-14">
-              <li className="mb-2">
-                <p className="text-md flex-row flex items-center">
-                  {i18n("freelance_frei")}
-                </p>
-                <a
-                  className="text-sky-800 underline"
-                  href={links("freiRuiLink")}
-                >
-                  {links("freiRuiLink")}
-                </a>
-              </li>
-              <li className="my-2">
-                <p className="text-md flex-row flex items-center">
-                  {i18n("freelance_box")}
-                </p>
-                <a
-                  className="text-sky-800 underline"
-                  href={links("box911Link")}
-                >
-                  {links("box911Link")}
-                </a>
-              </li>
-              <li className="mb-2">
-                <p className="text-md flex-row flex items-center">
-                  {i18n("projects_so")}
-                  <br />
-                </p>
-                <a className="text-sky-800 underline" href={links("soLink")}>
-                  {links("soLink")}
-                </a>
-              </li>
-            </ul>
+            <div className="w-full break-words">
+              <ul className="list-disc space-y-2 pl-14">
+                <li className="mb-2">
+                  <p className="text-md flex-row flex items-center">
+                    {i18n("freelance_frei")}
+                  </p>
+                  <a
+                    className="text-sky-800 underline"
+                    href={links("freiRuiLink")}
+                  >
+                    {links("freiRuiLink")}
+                  </a>
+                </li>
+                <li className="my-2">
+                  <p className="text-md flex-row flex items-center">
+                    {i18n("freelance_box")}
+                  </p>
+                  <a
+                    className="text-sky-800 underline"
+                    href={links("box911Link")}
+                  >
+                    {links("box911Link")}
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <p className="text-md flex-row flex items-center">
+                    {i18n("projects_so")}
+                    <br />
+                  </p>
+                  <a className="text-sky-800 underline" href={links("soLink")}>
+                    {links("soLink")}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
           <LanguageSelect />
         </div>
