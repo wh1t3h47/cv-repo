@@ -54,12 +54,12 @@ const Curriculum: React.FC = () => {
     <>
       <header className="pt-7 pb-2 bg-slate-200 print:bg-slate-100">
         <div className="flex flex-col md:flex-row items-center mb-8">
-          <div className="mx-10 bg-cyan-600 flex justify-center w-11/12 max-w-xl md:w-auto">
+          <div className="md:mx-10 bg-cyan-600 flex justify-center xs:w-10/12 w-full sm:max-w-md md:max-w-sm md:w-auto">
             <div className="mx-10 pb-3 flex flex-col">
               <h1 className="text-3xl print:text-2xl text-yellow-200 font-bold md:whitespace-nowrap divide-y mt-1.5">
                 {neutral("antonio")}
               </h1>
-              <div className="mt-3 bg-pink-300 print:bg-pink-200 h-1 max-w-sm w-96 md:w-64 mb-4"></div>
+              <div className="mt-3 bg-pink-300 print:bg-pink-200 h-1 max-w-sm w-full md:w-64 mb-4"></div>
               <a
                 className="text-xl print:text-lg text-yellow-100"
                 href={links("mailLink")}
@@ -99,9 +99,9 @@ const Curriculum: React.FC = () => {
       </header>
 
       <div className="bg-white text-gray-800 md:px-8">
-        <div className="grid grid-cols-12 gap-8 justify-items-center md:justify-items-start">
+        <div className="grid grid-cols-12 md:gap-8 justify-items-center md:justify-items-start">
           <aside
-            className={`px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full max-w-[40rem] md:w-auto h-full ${a4PrintPageClass}`}
+            className={`px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-14 md:mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full max-w-[40rem] md:w-auto h-full ${a4PrintPageClass}`}
           >
             <div className="mb-8">
               <h2 className="text-2xl font-bold my-3.5">
@@ -171,9 +171,9 @@ const Curriculum: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="mb-6 ml-4">
+            <div className="mb-6 xs:ml-4">
               <h3 className="text-xl font-semibold mb-2">{neutral("back")}</h3>
-              <ul className="pl-8">
+              <ul className="xs:pl-8">
                 <li className="flex items-baseline">
                   <span className="mx-2">
                     <SiTypescript className="text-indigo-400" />
@@ -238,11 +238,11 @@ const Curriculum: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="mb-6 ml-4">
+            <div className="mb-6 xs:ml-4">
               <h3 className="text-xl font-semibold mb-2">
                 {i18n("infra_title")}
               </h3>
-              <ul className="pl-8">
+              <ul className="xs:pl-8">
                 <li className="flex items-baseline">
                   <span className="mx-2">
                     <SiAmazonaws className="text-indigo-400" />
@@ -310,7 +310,7 @@ const Curriculum: React.FC = () => {
             </div>
           </aside>
           <section
-            className={`col-span-12 ml-5 md:ml-16 md:col-span-7 md:col-span-6 lg:col-span-4s 2xl:col-span-3 mt-2 w-auto h-auto text-neutral-750 ${a4PrintPageClass}`}
+            className={`col-span-12 ml-5 md:ml-16 mb-14 md:mb-0 md:col-span-7 md:col-span-6 lg:col-span-4s 2xl:col-span-3 mt-2 text-neutral-750 ${a4PrintPageClass}`}
           >
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">{i18n("exp_title")}</h2>
@@ -318,10 +318,10 @@ const Curriculum: React.FC = () => {
               <div className="ml-3">
                 <div className="mb-4">
                   <div className="flex items-center mb-2">
-                    <span className="-ml-2 mr-5">
+                    <span className="-ml-2 mr-3 xs:mr-5">
                       <FaBriefcase className="text-indigo-400" />
                     </span>
-                    <div className="my-2 w-full md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl px-5 md:px-0">
+                    <div className="my-2 w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl">
                       <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                         <h3 className="text-xl font-semibold">
                           {neutral("zenbit")}
@@ -335,12 +335,12 @@ const Curriculum: React.FC = () => {
                       <ul className="list-disc ml-4">
                         <li>
                           <p className="text-md">{i18n("zenbit_infra")}</p>
-                          <li>
-                            <p className="text-md">{i18n("zenbit_johnson")}</p>
-                          </li>
-                          <li>
-                            <p className="text-md">{i18n("zenbit_audi")}</p>
-                          </li>
+                        </li>
+                        <li>
+                          <p className="text-md">{i18n("zenbit_johnson")}</p>
+                        </li>
+                        <li>
+                          <p className="text-md">{i18n("zenbit_audi")}</p>
                         </li>
                       </ul>
                     </div>
@@ -349,11 +349,11 @@ const Curriculum: React.FC = () => {
 
                 <div className="mb-4">
                   <div className="flex items-center mb-2">
-                    <span className="-ml-2 mr-5">
+                    <span className="-ml-2 mr-3 xs:mr-5">
                       <FaBriefcase className="text-indigo-400" />
                     </span>
 
-                    <div className="w-full md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl px-5 md:px-0 ">
+                    <div className="w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl ">
                       <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                         <h3 className="text-xl font-semibold">
                           {neutral("redfox")}
@@ -376,11 +376,11 @@ const Curriculum: React.FC = () => {
                 </div>
 
                 <div className="flex items-center mb-2">
-                  <span className="-ml-2 mr-5">
+                  <span className="-ml-2 mr-3 xs:mr-5">
                     <FaBriefcase className="text-indigo-400" />
                   </span>
 
-                  <div className="w-full md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl px-5 md:px-0 ">
+                  <div className="w-10/12 md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-xl ">
                     <span className="flex justify-between items-center md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] pb-1 mb-1 border-b-2 border-purple-200 border-solid">
                       <h3 className="text-xl font-semibold">YouSendr</h3>
                       <p className="text-md">{i18n("yousendr_date")}</p>
@@ -402,29 +402,31 @@ const Curriculum: React.FC = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold mb-5">{i18n("edu_title")}</h2>
-            <div className="mb-4 ml-10 px-5 md:px-0 md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem]">
-              <div className="flex items-center mb-1 pb-1 border-b-2 border-purple-200 border-solid">
-                <span className="mr-2">
-                  <FaGraduationCap className="text-indigo-400" />
-                </span>
-                <span className="flex justify-between items-center md:px-0 w-full">
-                  <p className="font-semibold text-lg">{neutral("senai")}</p>
-                  <p className="text-md">{neutral("senai_date")}</p>
-                </span>
+            <div className="xs:ml-2 pl-1 pr-1.5 xs:pr-0">
+              <h2 className="text-2xl font-bold mb-5">{i18n("edu_title")}</h2>
+              <div className="mb-4 ml-7 md:w-96 lg:w-[32rem] xl:w-[40rem] 2xl:w-[46rem] w-10/12">
+                <div className="flex items-center mb-1 pb-1 border-b-2 border-purple-200 border-solid md:w-full">
+                  <span className="mr-2">
+                    <FaGraduationCap className="text-indigo-400" />
+                  </span>
+                  <span className="flex justify-between items-center w-full">
+                    <p className="font-semibold text-lg">{neutral("senai")}</p>
+                    <p className="text-md">{neutral("senai_date")}</p>
+                  </span>
+                </div>
+                <p className="text-md">{i18n("senai_specialization")}</p>
+                <p className="text-md ml-1">
+                  <b>-</b> {i18n("senai_lego_walle_site")}
+                  <br />
+                  <b>-</b> {i18n("senai_lego_walle")}
+                </p>
               </div>
-              <p className="text-md">{i18n("senai_specialization")}</p>
-              <p className="text-md ml-1">
-                <b>-</b> {i18n("senai_lego_walle_site")}
-                <br />
-                <b>-</b> {i18n("senai_lego_walle")}
-              </p>
             </div>
 
             <h2 className="text-2xl font-bold mt-7 mb-5">
               {i18n("projects_title")}
             </h2>
-            <ul className="list-disc space-y-2 ml-14 px-5 md:px-0">
+            <ul className="list-disc space-y-2 ml-14">
               <li className="mb-2">
                 <p className="text-md flex-row flex items-center">
                   {i18n("freelance_frei")}

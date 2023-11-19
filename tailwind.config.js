@@ -14,6 +14,7 @@ export default {
       },
       screens: {
         print: { raw: "print" },
+        xs: "425px",
         md: [
           { min: "900px" },
           { raw: "print" }, // Always hit md in print mode
