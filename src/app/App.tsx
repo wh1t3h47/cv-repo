@@ -1,3 +1,4 @@
+import LanguageSelect from "@/components/molecules/LanguageSelect";
 import { useI18n } from "@/utils/i18n/hooks/useI18n";
 import { useLinks } from "@/utils/i18n/hooks/useLinks";
 import { useNeutral } from "@/utils/i18n/hooks/useNeutral";
@@ -457,6 +458,7 @@ const Curriculum: React.FC = () => {
               </li>
             </ul>
           </section>
+          <LanguageSelect />
         </div>
       </div>
     </>
