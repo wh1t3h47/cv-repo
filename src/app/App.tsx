@@ -101,7 +101,7 @@ const Curriculum: React.FC = () => {
       <div className="bg-white text-gray-800 md:px-8">
         <div className="grid grid-cols-12 md:gap-8 justify-items-center md:justify-items-start">
           <aside
-            className={`px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-14 md:mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full md:max-w-[28rem] md:min-w-[24rem] h-full ${a4PrintPageClass}`}
+            className={"px-5 md:mr-2 col-span-12 md:col-span-5 lg:w-col-span-3 xl:col-span-4 mb-14 md:mb-8 md:order-first order-last bg-slate-100 print:bg-slate-50 w-full md:max-w-[28rem] md:min-w-[24rem] h-full"}
           >
             <div className="mb-8">
               <h2 className="text-2xl font-bold my-3.5">
