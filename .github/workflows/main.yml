@@ -1,12 +1,13 @@
-name: Publish to GitHub Pages CI/ CD 
+name: Publish to GitHub Pages CI/CD
+
 on:
   push:
     branches:
       - main
 
-build:
-    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-
+jobs:
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -27,8 +28,9 @@ build:
         with:
           path: dist
 
-deploy:
+  deploy:
     needs: build
+    runs-on: ubuntu-latest
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
@@ -39,7 +41,6 @@ deploy:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
