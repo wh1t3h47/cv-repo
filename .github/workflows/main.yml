@@ -23,6 +23,7 @@ jobs:
 
       - name: Build application
         run: yarn build --outDir dist
+        run: chmod -R 644 ./dist
 
       # At a minimum this job should upload artifacts using actions/upload-artifact
       - name: Upload Artifact Build
