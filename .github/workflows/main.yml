@@ -1,3 +1,9 @@
+name: Publish to GitHub Pages CI/ CD 
+on:
+  push:
+    branches:
+      - main
+
 build:
     # At a minimum this job should upload artifacts using actions/upload-pages-artifact
 
