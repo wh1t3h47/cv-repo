@@ -29,6 +29,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: dist
+          name: github-pages  # Nomear o artefato para coincidir com o esperado no deploy
 
   deploy:
     needs: build
@@ -50,5 +51,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
