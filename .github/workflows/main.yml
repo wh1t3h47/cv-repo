@@ -26,7 +26,7 @@ jobs:
 
       # At a minimum this job should upload artifacts using actions/upload-artifact
       - name: Upload Artifact Build
-        uses: actions/upload-3
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: dist/*
