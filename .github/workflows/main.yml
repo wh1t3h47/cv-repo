@@ -26,10 +26,10 @@ jobs:
 
       # At a minimum this job should upload artifacts using actions/upload-pages-artifact
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
+          name: github-pages
           path: dist
-          name: github-pages  # Nomear o artefato para coincidir com o esperado no deploy
 
   deploy:
     needs: build
@@ -47,6 +47,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Download GitHub Pages artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: github-pages
 
       - name: Deploy to GitHub Pages
         id: deployment
