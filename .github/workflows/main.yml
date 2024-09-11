@@ -22,11 +22,11 @@ jobs:
         run: yarn install --prefer-offline
 
       - name: Build application
-        run: yarn build
+        run: yarn build --outDir dist
 
       # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-      - name: github-pages
-        uses: actions/upload-artifact@v2
+      - name: Upload Artifact Build
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: dist
@@ -48,8 +48,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: github-pages
-        uses: actions/download-artifact@v2
+      - name: Download Artifact Build
+        uses: actions/download-artifact@v4
         with:
           name: github-pages
 
