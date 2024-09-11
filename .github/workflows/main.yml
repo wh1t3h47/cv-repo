@@ -23,11 +23,10 @@ jobs:
 
       - name: Build application
         run: yarn build --outDir dist
-        run: chmod -R 644 ./dist
 
       # At a minimum this job should upload artifacts using actions/upload-artifact
       - name: Upload Artifact Build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v1
         with:
           name: github-pages
           path: dist
