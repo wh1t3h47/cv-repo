@@ -25,7 +25,7 @@ jobs:
         run: yarn build
 
       # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-      - name: Upload GitHub Pages artifact
+      - name: github-pages
         uses: actions/upload-artifact@v2
         with:
           name: github-pages
@@ -48,7 +48,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Download GitHub Pages artifact
+      - name: github-pages
         uses: actions/download-artifact@v2
         with:
           name: github-pages
