@@ -24,9 +24,12 @@ jobs:
       - name: Build application
         run: yarn build --outDir dist
 
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v3
       # At a minimum this job should upload artifacts using actions/upload-artifact
       - name: Upload Artifact Build
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: dist
