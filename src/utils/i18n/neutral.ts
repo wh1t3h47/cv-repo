@@ -1,4 +1,4 @@
-export const antonio = "Antônio Martos Harres"
+export const antonio = "Antonio Martos Harres"
 export const email = "tom.mharres@gmail.com"
 export const phone = "+55 41 98876-5037"
 export const front = "Frontend"
