@@ -29,7 +29,7 @@ jobs:
 
       # At a minimum this job should upload artifacts using actions/upload-artifact
       - name: Upload Artifact Build
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: github-pages
           path: dist
@@ -53,7 +53,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
         with:
           artifact_name: github-pages
         env:
